@@ -10,6 +10,11 @@
     <string name="email">Email:</string>
     <string name="pass">Password</string>
     <string name="salut">Bienvenu</string>
+    <string name="action_ajout">Settings</string>
+    <string name="New">toast</string>
+    <string name="email_format_error">le format du champs email n est pas respecter</string>
+    <string name="email_or_password_or_speudo_empty">Tous les champs sont vide</string>
+
 
 
 </resources>

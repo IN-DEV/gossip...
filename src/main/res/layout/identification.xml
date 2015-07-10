@@ -152,11 +152,11 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.1">
         <Button
-            android:id="@+id/calcul"
+            android:id="@+id/btncontinu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Continuer"
-            android:layout_weight="1"
+            android:layout_weight="0.30"
             android:layout_marginLeft="25dip"
             android:layout_marginRight="25dip"
             />

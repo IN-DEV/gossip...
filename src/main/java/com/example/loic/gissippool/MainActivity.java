@@ -1,20 +1,48 @@
 package com.example.loic.gissippool;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ListView;
+import com.example.loic.gissippool.R;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
+
+    private Button btnsuivant;
+    private ListView list;
+    private String [] titre;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ListView list =(ListView)findViewById(R.id.linealist);
+        if (savedInstanceState == null) {
+            RumeurAdapter adapter = new RumeurAdapter(MainActivity.this, titre);
+            ListView listView = (ListView) findViewById(R.id.list_item);
+            listView.setAdapter(adapter);
+
+        }
     }
+        protected void onStart(){
+         super.onStart();
+    }
+           protected void onStop() {
+               super.onStop();
+
+           }
+
+         protected void onPause(){
+             super.onPause();
+         }
+
+
+
 
 
     @Override
@@ -33,7 +61,10 @@ public class MainActivity extends ActionBarActivity {
 
             case R.id.action_search:
                 return true;
-
+            case R.id.action_ajout:
+                Intent intent = new Intent(MainActivity.this,Rumeur.class);
+                startActivity(intent);
+                return true;
 
         //noinspection SimplifiableIfStatement
             case R.id.action_settings:

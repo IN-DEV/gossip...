@@ -18,7 +18,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Les plus chauds"
             android:id="@+id/textView"
-            android:textSize="30dp" />
+            android:textSize="25sp" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -35,7 +35,8 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton3" />
+            android:id="@+id/radioButton3"
+            android:layout_marginRight="10sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -51,7 +52,7 @@
             android:text="Titres"
             android:id="@+id/textView2"
             android:textSize="25dp"
-            android:layout_marginRight="200sp" />
+            android:layout_marginRight="100sp" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -63,7 +64,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageButton2"
-            android:src="@android:drawable/ic_menu_info_details" />
+            android:src="@android:drawable/ic_menu_info_details"
+            android:layout_marginRight="10sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -79,14 +81,15 @@
             android:text="Liste des rumeurs"
             android:id="@+id/textView3"
             android:textSize="25dp"
-            android:layout_marginRight="80sp" />
+            android:layout_marginRight="50sp" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Deballer"
-            android:id="@+id/button" />
+            android:id="@+id/button"
+            android:layout_marginLeft="10sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -96,5 +99,19 @@
         android:layout_weight="0.5"
         android:weightSum="1.0"
         android:id="@+id/linealist"
-        android:background="#ffc9ccff"></LinearLayout>
+        android:background="#ffc9ccff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textsujet" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textchoix"
+            />
+
+    </LinearLayout>
 </LinearLayout>
