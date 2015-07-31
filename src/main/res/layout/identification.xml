@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0"
+    android:background="#ff8883ff">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:paddingLeft="80sp"
+        android:paddingTop="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="BIENVENU"
+            android:id="@+id/textView4"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pseudo : "
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/pseudo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Speudo"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password : "
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/passwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="numberDecimal" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Je suis deja membre "
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:gravity="center"/>
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/radio1"
+            android:orientation="horizontal"
+           >
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </RadioGroup>
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email : "
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Speudo"
+            android:inputType="numberDecimal" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tojours me demander "
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            />
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/check1"
+            android:orientation="horizontal"/>
+
+
+        <CheckedTextView
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+        <Button
+            android:id="@+id/btncontinu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continuer"
+            android:layout_weight="0.30"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            />
+        </LinearLayout>
+</LinearLayout>
